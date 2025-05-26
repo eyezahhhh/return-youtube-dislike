@@ -36,6 +36,7 @@ jobs:
         run: npm run build
 
       - name: Upload artifact
+        uses: actions/upload-artifact@v4
         with:
           name: 'Return YouTube Dislike - Firefox'
           path: ./Extensions/combined/dist/firefox
